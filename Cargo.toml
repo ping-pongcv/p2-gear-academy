@@ -1,0 +1,20 @@
+# workspace = { members = [ "game-session","io", "wordle"] }
+[workspace]
+resolver = "2"
+members = ["wordle","game-session"]
+
+[workspace.package]
+version = "0.1.0"
+edition = "2021"
+publish = false
+
+[workspace.dependencies]
+wordle-io.path = "wordle/io"
+game-session-io.path = "game-session/io"
+
+gstd = "1.4.1"
+gmeta = "1.4.1"
+gear-wasm-builder = "1.4.1"
+gtest = "1.4.1"
+parity-scale-codec = { version = "3", default-features = false }
+scale-info = { version = "2", default-features = false }
