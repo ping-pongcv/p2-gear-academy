@@ -1,0 +1,18 @@
+# workspace = { members = ["io"] }
+[package]
+name = "game-session"
+version.workspace = true
+edition.workspace = true
+publish.workspace = true
+
+[dependencies]
+gstd.workspace = true
+game-session-io.workspace = true
+
+[build-dependencies]
+gear-wasm-builder.workspace = true
+game-session-io.workspace = true
+
+[dev-dependencies]
+gtest.workspace = true
+game-session-io.workspace = true
